@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex selector</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+                <a  class="logo" href="#">TrackL</a>
+                <label for="show-menu" id="show-nav-menus">
+                     <i class="fas fa-bars" id="click-btn" class="check"></i>
+                </label>
+                <input type="checkbox" id="show-menu"  class="hide-menu" role="button"/>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero middel">
+            <div class="hero-content">
+                <h1>Track The Learning 
+                    <br>
+                    Process Schedule
+                </h1>
+                <button class="btn">
+                    Get 30 Days Trial
+                </button>  
+            </div>
+            <figure>
+                <img src="assets/hero.png" alt="hero image">
+            </figure> 
+        </section>
+        <section class="download-files ">
+            <div class="flex">
+                <a href="#.pdf">PDF FILE</a>
+                <a href="#.doc">WORD FILE</a>
+                <a href="#.jpeg">IMAGE FILE</a>
+                <a href="#.mp4">VIDEO FILE</a>
+            </div>
+            <hr>
+        </section>
+        <section id="statistics" class="flex">
+            <article class="flex-45">
+                <h2>
+                    Monitor Your Learning
+                    <br>
+                    And Improve It.
+                </h2>
+                <p>
+                    Far far away ,behind  the word mountains,far 
+                    from Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Similique possimus quibusdam 
+                    non culpa magnam excepturi nostrum obcaecati. Explicabo, 
+                    nisi asperiores.
+                </p>
+                <a href="#" class="arrow-btn">Learn More</a>
+            </article>
+            <figure class="flex-40 stat-container">
+                <img src="assets/learning-graph.png" alt="">
+            </figure>
+        </section>
+        <section id ="schedule">
+            <h2>WEEKLY SCORE</h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Days</th>
+                    <th>Course</th>
+                    <th>Score(0-100)</th>
+                    <th>Hour Spend</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>Product Design</td>
+                    <td>40</td>
+                    <td>2 Hour 30 Min</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>Product Design</td>
+                    <td>60</td>
+                    <td>3 Hour 20 Min</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>Data Science</td>
+                    <td>20</td>
+                    <td>1 Hour 30 Min</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>ux Design</td>
+                    <td>60</td>
+                    <td>2 Hour 20 Min</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>ux Design</td>
+                    <td>30</td>
+                    <td>2 Hour 40 Min</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>Data Science</td>
+                    <td>60</td>
+                    <td>1 Hour 30 Min</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>HTML & CSS</td>
+                    <td>70</td>
+                    <td>1 Hour 30 Min</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+        <section id= "pricing">
+            <h2>
+                Join Us And Let's Study 
+                <br>
+                With Your Friends
+            </h2>
+            <div class="subscription-container">
+                <span>Monthly</span>
+                <div class="switch-container middel">
+                    <div class="toggle-btn middel">
+                        <div class="icon"></div>
+                    </div>
+                </div>
+                <span>Yearly</span>
+            </div>
+            
+            <div class="pricing-card-container">
+                <div class="flex-48 pricing-card">
+                    <h3>Basic</h3>
+                    <p>
+                        it is long established fact that a reader 
+                        will be distracted by a readable
+                    </p>
+                    <h4>48</h4>
+                    <hr>
+                    <ul>
+                        <li>
+                            50 cources a day
+                        </li>
+                        <li>
+                            4 forms a month
+                        </li>
+                        <li>
+                            16 chapters a day
+                        </li>
+                        <li class="cross">
+                            Private lessons once a week
+                        </li>
+                        <li class="cross">
+                            Get Weekly reward
+                        </li>
+                    </ul>
+                    <button class="btn">
+                        Get Started
+                    </button>
+                </div>
+                <div class="flex-48 pricing-card">
+                    <h3>Most popular</h3>
+                    <p>
+                        it is long established fact that a reader 
+                        will be distracted by a readable
+                    </p>
+                    <h4>58</h4>
+                    <hr>
+                    <ul>
+                        <li>
+                            50 cources a day
+                        </li>
+                        <li>
+                            4 forms a month
+                        </li>
+                        <li>
+                            16 chapters a day
+                        </li>
+                        <li>
+                            Private lessons once a week
+                        </li>
+                        <li>
+                            Get Weekly reward
+                        </li>
+                    </ul>
+                    <button class="btn active-btn">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="start-trial middel">
+                <h4>
+                    Start Your 30 Days Trial Now!
+                </h4>
+                <button class="btn">
+                    Get Started
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="flex footer-col">
+            <div class="col flex-20">
+                <h4 class="col-heading">TrackL</h4>
+                <p>
+                    Far far away,behind  the word mountains
+                    ,far from  the .
+                </p>
+                <div class="social-links-container flex">
+                    <div class="social-link middel">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-link middel">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="social-link middel">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+               </div> 
+                <div class="col flex-20">
+                    <h4 class="col-heading">Features</h4>
+                    <nav class="links">
+                        <ul>
+                            <li><a href="#">Calender</a></li>
+                            <li><a href="#about">Fourm</a></li>
+                            <li><a href="#services">Messager</a></li>
+                            <li><a href="#">Schedule</a></li>
+                        </ul>
+                    </nav>    
+                </div>
+                <div class="col flex-20">
+                    <h4 class="col-heading">Support</h4>
+                    <nav class="links">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#about">Carrer</a></li>
+                            <li><a href="#services">FAQs</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </nav>    
+                </div>
+                <div class="col flex-20">
+                    <h4 class="col-heading">Contact</h4>
+                    <address>
+                        <a href="#">hello@track.io</a>
+                        <p>(+00)00000000000000</p>
+                    </address>
+                </div>
+    
+        </section>
+    </footer>
+</body>
+</html>
