@@ -53,13 +53,13 @@ table {
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Popppins',sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 html{
     font-size: 62.5%;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
     font-size: 1.6rem;
 }
@@ -119,7 +119,7 @@ button{
 
 section{
     width: 100%;
-    padding: 6rem 11%;
+    padding: 4rem 11%;
 }
 
 
@@ -197,7 +197,6 @@ h4{
     display: flex;
     align-items: center;
     flex-flow: column wrap;
-    z-index: 111; 
 }
 .hero-content figure img{
     position: absolute;
@@ -220,7 +219,8 @@ h4{
      width: 100%;
      position:absolute;
      max-width: 60%;
-     top: 40%;
+     bottom: 0px;
+     margin: -15rem;
  }
  .hero figure img{
      width: 100%;
@@ -229,10 +229,9 @@ h4{
  /* hero section ends here  */
 .download-files{
     margin: 20rem 0 0 0;
-    padding: 0rem 11%;
 }
 .download-files a{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 800;
     color: #AFBBD7;
 
@@ -242,15 +241,30 @@ h4{
     width: 100%;
     border-color: #D5E5E5;
 }
+.files-container{
+    align-items: center;
+}
 
+a[href $=".pdf"]::before{
+    content: url('../assets/pdf.png');
+    margin: 0 1rem 0 0;
+}
+a[href $=".doc"]::before{
+    content: url('../assets/word.png');
+    margin: 0 1rem 0 0;
+}
+a[href $=".jpeg"]::before{
+    content: url('../assets/image.png');
+    margin: 0 1rem 0 0;
+}
+a[href $=".mp4"]::before{
+    content: url('../assets/video.png');
+    margin: 0 1rem 0 0;
+}
 
  /* statistics section starts here  */
 #statistics{
     align-items: flex-start;
-    padding: 5rem 11%;
-}
-#statistics article{
-    padding:  0 2rem 0 0 ;
 }
 #statistics article p{
     margin: 2rem 0 ;
@@ -261,6 +275,17 @@ h4{
 .arrow-btn{
     background:#59BFC2;
     padding: .8rem 3.2rem;    
+    position: relative;
+}
+.arrow-btn::after{
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -20px;
+    right: 0;
 }
 .stat-container img{
     width: 100%;
@@ -327,8 +352,6 @@ h4{
 .pricing-card-container{
     width: 100%;
     padding:  0 12%;
-    display: flex;
-    justify-content: space-between;
     margin: 5rem 0 0 0 ;
     
 }
@@ -369,12 +392,12 @@ h4{
     font-size: 1.8rem;
 }
 #pricing ul li{
-    list-style-image:url('assets/tick.png');
+    list-style-image:url('../assets/tick.png');
     list-style-position: inside;
     margin: 1rem 0 0 0;
 }
 #pricing ul .cross {
-    list-style-image:url('assets/cross.png');
+    list-style-image:url('../assets/cross.png');
     list-style-position: inside;
 }
 #pricing  .btn
@@ -430,11 +453,14 @@ footer .col-heading{
 
 
 footer nav a{
-	margin: .5rem ;
 	color: #6E82AF;
     font-weight: 600;
 	font-size: 1.3rem;
 	
+}
+.links a{
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 address a{
     color: #6E82AF;
@@ -442,48 +468,126 @@ address a{
 }
 /* footer section ends here  */
 
+/* Responsive starts here  */
+@media (max-width:768px){
 
-/* responsive start here */
- 
-@media (max-width: 768px) {
-   
-  }
-
-  @media screen and (max-width:768px){
     html{
         font-size: 55%;
     }
-      section{
-          padding: 2rem;
-      }
-      
-      h1{
-          font-size: 4rem;
-      }
-      
-      h2{
-          font-size: 3rem;
-      }
-      h3{
-          font-size: 2.5rem;
-      }
-      h4{
-          font-size: 2rem;
-      }
-      .flex-48{
-          flex: 0 1 100%
-      
-      }
-      .flex-40{
-          flex: 0 1 100%;
-      
-      }
-      .flex-45{
-          flex: 0 1 100%;
-      
-      }
-      .flex-20{
-          flex: 0 1 48%;
-      }  
-    
+    .flex{
+        flex-flow:column wrap ;
     }
+    section{
+        padding: 2rem;
+        width: 100%;
+    }
+    .flex-48{
+        flex: 1 1 100%;
+    }
+    .flex-20{
+        flex: 1 1 100%;
+    }
+          
+h1{
+    font-size: 3.6rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+h4{
+    font-size: 2.5rem;
+
+}
+
+    .header{
+        padding: 0px;
+
+    }
+    .header .container{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        border-bottom: .1rem #D5E5E5;
+    }
+
+    
+    .header nav{  
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        background: rgb(12, 117, 121);
+        z-index: 1000;
+    }
+    header nav ul{
+        flex-flow: column ;
+    } 
+    header nav ul li a{
+        margin: 4rem 0 0 0;
+    } 
+    
+    /*Show menu when invisible checkbox is checked*/
+    .header  nav{
+        display: none;
+    }
+    input[type=checkbox]:checked ~  nav{
+        display: block;
+    }
+   
+
+    .header label #click-btn {
+        display: inline-block;
+    }
+
+    .hero figure{
+        width: 100%;
+        position:absolute;
+        max-width: 80%;
+        bottom: 0px;
+        margin: -15rem;
+    }
+    .files-container{
+        margin: -6rem 0 0 0 ;
+    }
+    .files-container a{
+        margin: 1rem 0 0 0 ;
+    }
+    .pricing-card-container{
+        padding: 0px;
+    }
+    .pricing-card {
+        margin: 0 0 3rem 0;
+    }
+    #statistics .flex-40{
+        margin: 3rem 0 0 0;
+    }
+    .social-links-container {
+        flex-direction: row;
+    }
+
+    footer .col{
+        margin: 0 0 2rem 0;
+    }
+    footer nav a{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .hero figure{
+        margin: -8rem;
+    }
+    .files-container{
+        margin: -11rem 0 0 0 ;
+    }
+    .files-container a{
+        margin: 1rem 0 0 0 ;
+    }
+}

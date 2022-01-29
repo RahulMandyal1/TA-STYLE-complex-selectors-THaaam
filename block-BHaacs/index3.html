@@ -1,29 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complex selector</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Responsive Website</title>
+    <!-- External  stylesheets  -->
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+    <!-- Font Awesome cdn link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Goolge font cdn  link  -->
+     
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container flex">
-                <a  class="logo" href="#">TrackL</a>
-                <label for="show-menu" id="show-nav-menus">
-                     <i class="fas fa-bars" id="click-btn" class="check"></i>
-                </label>
-                <input type="checkbox" id="show-menu"  class="hide-menu" role="button"/>
-            <nav>
-                <ul class="flex">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </nav>
+            <a  class="logo" href="#">TrackL</a>
+            <label for="show-menu" id="show-nav-menus">
+                 <i class="fas fa-bars" id="click-btn" class="check"></i>
+            </label>
+            <input type="checkbox" id="show-menu"  class="hide-menu" role="button"/>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </nav>
         </div>
     </header>
     <main>
@@ -41,8 +48,9 @@
                 <img src="assets/hero.png" alt="hero image">
             </figure> 
         </section>
+    </main>
         <section class="download-files ">
-            <div class="flex">
+            <div class="flex files-container">
                 <a href="#.pdf">PDF FILE</a>
                 <a href="#.doc">WORD FILE</a>
                 <a href="#.jpeg">IMAGE FILE</a>
@@ -51,7 +59,7 @@
             <hr>
         </section>
         <section id="statistics" class="flex">
-            <article class="flex-45">
+            <article  class="flex-48">
                 <h2>
                     Monitor Your Learning
                     <br>
@@ -143,7 +151,7 @@
                 <span>Yearly</span>
             </div>
             
-            <div class="pricing-card-container">
+            <div class="pricing-card-container flex">
                 <div class="flex-48 pricing-card">
                     <h3>Basic</h3>
                     <p>
