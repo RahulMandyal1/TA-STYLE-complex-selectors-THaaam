@@ -1,0 +1,593 @@
+/* css reset start here  */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* css reset ends here  */
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 2;
+    font-size: 1.6rem;
+}
+body p{
+    font-size: 1.6rem;
+    color: #6E82AF;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+.btn{
+    padding: 1.6rem 3.2rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    background: #fff;
+    color: #66739A;
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.middel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* for the columns */
+.flex-48{
+    flex: 0 1 48%;
+
+}
+.flex-40{
+    flex: 0 1 40%;
+
+}
+.flex-45{
+    flex: 0 1 45%;
+
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.full-width{
+    width: 100%;
+}
+button{
+    border: none;
+    outline: none;
+
+}
+
+section{
+    width: 100%;
+    padding: 4rem 11%;
+}
+
+
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 6rem;
+    text-align: none;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #6675A2;
+    line-height: 5rem;
+    text-align: center;
+}
+h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #6675A2;
+    line-height: 5rem;
+    text-align: center;
+}
+h4{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #3D9EA1;
+    line-height: 5rem;
+    text-align: center;
+}
+
+/* navigation section starts here  */
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem 11%;
+}
+.header  .logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header nav li{
+    margin:  0 0 0 2rem;
+}
+
+
+.header label #click-btn , .hide-menu{
+    
+    font-size: 3rem;
+    color: #fff;
+    display: none;
+    
+}
+/* navigation section ends here  */
+
+/* hero section starts  here  */
+.hero{
+    background: #59BFC2;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;  
+    flex-flow:column wrap ;  
+    padding: 1rem 11%;
+
+}
+.hero-content{
+    position: relative;
+    margin: -10rem 0 0 0 ; 
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.hero-content figure img{
+    position: absolute;
+    width: 70rem;
+ } 
+
+ .hero-content .btn{
+     background: #fff;
+     border: none;
+     outline: none;
+     display: inline-block;
+     padding: 1.6rem 3.2rem;
+     margin: 2rem 0 0 0;
+     font-size: 1.6rem;
+     color: #66739A;
+     font-weight: 700;
+ }
+
+ .hero figure{
+     width: 100%;
+     position:absolute;
+     max-width: 60%;
+     bottom: 0px;
+     margin: -15rem;
+ }
+ .hero figure img{
+     width: 100%;
+     height: 100%;
+ }
+ /* hero section ends here  */
+.download-files{
+    margin: 20rem 0 0 0;
+}
+.download-files a{
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: #AFBBD7;
+
+}
+.download-files  hr{
+    margin: 1rem 0 0 0;
+    width: 100%;
+    border-color: #D5E5E5;
+}
+.files-container{
+    align-items: center;
+}
+
+a[href $=".pdf"]::before{
+    content: url('../assets/pdf.png');
+    margin: 0 1rem 0 0;
+}
+a[href $=".doc"]::before{
+    content: url('../assets/word.png');
+    margin: 0 1rem 0 0;
+}
+a[href $=".jpeg"]::before{
+    content: url('../assets/image.png');
+    margin: 0 1rem 0 0;
+}
+a[href $=".mp4"]::before{
+    content: url('../assets/video.png');
+    margin: 0 1rem 0 0;
+}
+
+ /* statistics section starts here  */
+#statistics{
+    align-items: flex-start;
+}
+#statistics article p{
+    margin: 2rem 0 ;
+}
+#statistics h2{
+    text-align: left;
+}
+.arrow-btn{
+    background:#59BFC2;
+    padding: .8rem 3.2rem;    
+    position: relative;
+}
+.arrow-btn::after{
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -20px;
+    right: 0;
+}
+.stat-container img{
+    width: 100%;
+}
+ /* statistics  section ends here  */
+ 
+/* schedule section start  here  */
+#schedule h2 {
+    text-align: center;
+}
+#schedule table{
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+  
+}
+#schedule table thead tr{
+    background-color: #3D9EA1;
+    color: #ffffff;
+    text-align: left;
+    border-radius: .5rem;
+}
+#schedule table  th, #schedule table  td{
+    padding: 12px 15px;
+}
+#schedule table  tr{
+    border-bottom: 1px solid #dddddd;
+}
+#schedule table tbody tr:nth-of-type(even){
+    background-color: #D5E5E5;
+}
+#schedule table tbody td{
+ border: 1px solid #dddddd;
+}
+/* schedule section  ends here  */
+#pricing .switch-container{
+    width: 6rem;
+    height: 3rem;
+    background: #BBECEC;
+    border-radius: 1.6rem;
+    margin: 0 2rem;
+    justify-content: flex-end;
+    padding: 0 .5rem;
+}
+.subscription-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+.toggle-btn{
+    width: 2.1rem;
+    height: 2.1rem;
+    background: #5CC0C3;
+    border-radius: 50%;
+}
+.toggle-btn .icon{
+    width: .2rem;
+    height: 1rem;
+    background: #fff;
+}
+.pricing-card-container{
+    width: 100%;
+    padding:  0 12%;
+    margin: 5rem 0 0 0 ;
+    
+}
+.pricing-card{
+    border-radius: 1.6rem;
+    padding: 4% ;
+    outline: .5rem solid #E9EFFB;
+
+}
+.pricing-card p  {
+
+    text-align: center;
+    margin: 1rem 0;
+}
+.pricing-card h4{
+    text-align: center;
+}
+
+.pricing-card h4::before{
+    content : "$";
+    font-size:2rem ;
+    margin: 0 .5rem 0 0;
+}
+.pricing-card h4::after{
+    content : "/Month";
+    font-size: 1.5rem;
+    color: grey;
+    margin: 0 0 0 .5rem;
+    font-weight: 400;
+}
+.pricing-card hr{
+    width: 100%;
+    color:#D5E5E5;
+    margin: 1rem 0 ;
+}
+#pricing ul {
+    margin: 2rem  0 ;
+    font-size: 1.8rem;
+}
+#pricing ul li{
+    list-style-image:url('../assets/tick.png');
+    list-style-position: inside;
+    margin: 1rem 0 0 0;
+}
+#pricing ul .cross {
+    list-style-image:url('../assets/cross.png');
+    list-style-position: inside;
+}
+#pricing  .btn
+{
+    width: 100%;
+    background: none;
+    border: .1rem solid #66739A;
+
+}
+#pricing .active-btn{
+    color: #fff;
+    background: #59BFC2;
+    border: none;
+}
+
+/* start trial section start here  */
+.start-trial{
+    background: #3D9EA1;
+    padding: 8rem 0 ;
+    border-radius: 3rem;
+    flex-flow: column;
+}
+.start-trial h4{
+    color: #fff;
+}
+.start-trial .btn{
+    margin: 2rem;
+    padding: 1.2rem 5rem;
+}
+
+
+/* footer section starts here  */
+.social-links-container{
+    justify-content: flex-start;
+    margin: 2rem 0 ;
+}
+.social-link{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #5CC0C3;
+    color: #fff;
+    margin:  0 2rem 0 0;
+}
+.footer-col{
+    align-items: flex-start;
+}
+footer .col-heading{
+	font-size:2rem;
+    color: #66739A;
+    text-align: left;
+}
+
+
+footer nav a{
+	color: #6E82AF;
+    font-weight: 600;
+	font-size: 1.3rem;
+	
+}
+.links a{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+address a{
+    color: #6E82AF;
+    margin: .5rem 0;
+}
+/* footer section ends here  */
+
+/* Responsive starts here  */
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+    .flex{
+        flex-flow:column wrap ;
+    }
+    section{
+        padding: 2rem;
+        width: 100%;
+    }
+    .flex-48{
+        flex: 1 1 100%;
+    }
+    .flex-20{
+        flex: 1 1 100%;
+    }
+          
+h1{
+    font-size: 3.6rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+h4{
+    font-size: 2.5rem;
+
+}
+
+    .header{
+        padding: 0px;
+
+    }
+    .header .container{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        border-bottom: .1rem #D5E5E5;
+    }
+
+    
+    .header nav{  
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        background: rgb(12, 117, 121);
+        z-index: 1000;
+    }
+    header nav ul{
+        flex-flow: column ;
+    } 
+    header nav ul li a{
+        margin: 4rem 0 0 0;
+    } 
+    
+    /*Show menu when invisible checkbox is checked*/
+    .header  nav{
+        display: none;
+    }
+    input[type=checkbox]:checked ~  nav{
+        display: block;
+    }
+   
+
+    .header label #click-btn {
+        display: inline-block;
+    }
+
+    .hero figure{
+        width: 100%;
+        position:absolute;
+        max-width: 80%;
+        bottom: 0px;
+        margin: -15rem;
+    }
+    .files-container{
+        margin: -6rem 0 0 0 ;
+    }
+    .files-container a{
+        margin: 1rem 0 0 0 ;
+    }
+    .pricing-card-container{
+        padding: 0px;
+    }
+    .pricing-card {
+        margin: 0 0 3rem 0;
+    }
+    #statistics .flex-40{
+        margin: 3rem 0 0 0;
+    }
+    .social-links-container {
+        flex-direction: row;
+    }
+
+    footer .col{
+        margin: 0 0 2rem 0;
+    }
+    footer nav a{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .hero figure{
+        margin: -8rem;
+    }
+    .files-container{
+        margin: -11rem 0 0 0 ;
+    }
+    .files-container a{
+        margin: 1rem 0 0 0 ;
+    }
+}
